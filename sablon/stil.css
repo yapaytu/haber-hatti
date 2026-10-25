@@ -1,0 +1,33 @@
+/* Gazete sayfası: krem kâğıt, siyah mürekkep, tek vurgu rengi. */
+:root{--kagit:#FAF8F3;--murekkep:#16171A;--soluk:#62646B;--cizgi:#DDD8CC;--vurgu:#D9472B;
+  --baslik:"Fraunces",Georgia,serif;--govde:"Source Serif 4",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--kagit:#141517;--murekkep:#ECE9E2;--soluk:#A3A39E;--cizgi:#33353A;--vurgu:#F06A4C}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--kagit);color:var(--murekkep);font:19px/1.65 var(--govde)}
+a{color:inherit}
+.bas{max-width:1040px;margin:0 auto;padding:30px 20px 18px;border-bottom:3px solid var(--murekkep);display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.logo{font:800 34px/1 var(--baslik);letter-spacing:-.02em;text-decoration:none}
+.slogan{font:500 13px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--soluk)}
+main{max-width:1040px;margin:0 auto;padding:0 20px}
+.liste{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px}
+.kart{display:block;text-decoration:none;padding:26px 0;border-bottom:1px solid var(--cizgi);min-width:0}
+.kart h2{font:600 23px/1.2 var(--baslik);letter-spacing:-.01em;margin:8px 0}
+.kart p{margin:0;color:var(--soluk);font-size:16px;line-height:1.5}
+.kart:hover h2{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.kart.buyuk{grid-column:1/-1;padding:40px 0 34px;border-bottom:3px double var(--murekkep)}
+.kart.buyuk h2{font-size:clamp(34px,5.4vw,58px);line-height:1.04;font-weight:800;max-width:20ch}
+.kart.buyuk p{font-size:20px;max-width:60ch}
+.ust{font:500 12.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--vurgu)}
+.yazi{max-width:680px;margin:0 auto;padding:42px 0 30px}
+.yazi h1{font:800 clamp(34px,6vw,52px)/1.05 var(--baslik);letter-spacing:-.02em;margin:12px 0 18px}
+.giris{font-size:22px;line-height:1.5;color:var(--soluk);margin:0 0 30px;padding-bottom:26px;border-bottom:1px solid var(--cizgi)}
+.yazi h2{font:600 27px/1.2 var(--baslik);margin:40px 0 10px}
+.yazi a{text-decoration-color:var(--vurgu);text-decoration-thickness:2px;text-underline-offset:3px}
+.yazi code{font:500 .85em var(--mono);background:rgba(127,127,127,.12);padding:1px 5px;border-radius:4px}
+.kaynaklar{margin-top:44px;padding-top:16px;border-top:3px solid var(--murekkep)}
+.kaynaklar h3{font:500 12.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;margin:0 0 8px}
+.kaynaklar ul{margin:0;padding-left:18px;font-size:16px}
+.not{font-size:14px;color:var(--soluk);margin-top:22px}
+.son{max-width:1040px;margin:40px auto 0;padding:22px 20px 40px;border-top:1px solid var(--cizgi);font:500 13px var(--mono);color:var(--soluk)}
+@media (max-width:820px){.liste{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.liste{grid-template-columns:1fr}body{font-size:18px}}

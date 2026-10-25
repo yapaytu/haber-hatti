@@ -1,0 +1,23 @@
+{
+  "site_adi": "Haber Hattı",
+  "slogan": "Yapay zekâ haberleri, her gün, sade Türkçe",
+  "adres": "https://ornek.com",
+  "konu": "yapay zekâ",
+  "tur_basina": 3,
+  "gunluk": 9,
+  "bekleme_saat": 3,
+  "pencere_saat": 36,
+  "kaynaklar": [
+    {"ad": "OpenAI", "url": "https://openai.com/news/rss.xml", "birincil": true},
+    {"ad": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "birincil": true},
+    {"ad": "Google AI", "url": "https://blog.google/technology/ai/rss/", "birincil": true},
+    {"ad": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "birincil": true},
+    {"ad": "GitHub", "url": "https://github.blog/ai-and-ml/feed/", "birincil": true},
+    {"ad": "NVIDIA", "url": "https://blogs.nvidia.com/feed/", "birincil": true, "filtre": "\\b(ai|model|agent|llm|generative)\\b"},
+    {"ad": "Microsoft", "url": "https://news.microsoft.com/source/topics/ai/feed/", "birincil": true},
+    {"ad": "TechCrunch", "url": "https://techcrunch.com/category/artificial-intelligence/feed/"},
+    {"ad": "The Verge", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"},
+    {"ad": "The Decoder", "url": "https://the-decoder.com/feed/"},
+    {"ad": "Ars Technica", "url": "https://arstechnica.com/ai/feed/"}
+  ]
+}
